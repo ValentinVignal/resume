@@ -95,10 +95,10 @@
 
 \newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
 % \renewcommand{\labelitemii}{$\circ$}
-\renewcommand{\labelitemi}{$\vcenter{\hbox{\tiny$\bullet$}}$}
+% \renewcommand{\labelitemi}{$\vcenter{\hbox{\tiny$\bullet$}}$}
 \newcommand{\cvHeadingListStart}{\begin{itemize}[leftmargin=*,labelsep=0mm]}
 \newcommand{\cvHeadingListEnd}{\end{itemize}\vspace{2mm}}
-\newcommand{\cvItemListStart}{\begin{justify}\begin{itemize}[leftmargin=3ex, rightmargin=2ex, noitemsep,labelsep=1.2mm,itemsep=0mm]\small}
+\newcommand{\cvItemListStart}{\begin{justify}\begin{itemize}[leftmargin=1ex, rightmargin=2ex, noitemsep, labelsep=1.2mm, itemsep=0mm]\small}
 \newcommand{\cvItemListEnd}{\end{itemize}\end{justify}\vspace{-2mm}}
 \newcommand{\resumeHeadingSkillEnd}{\end{itemize}\vspace{-2mm}}
 \newcommand{\cvsection}[1]{%
@@ -151,6 +151,33 @@ dynamic environment.
         }}
 \end{itemize}
 
+\section{\textbf{Experience}}
+\cvHeadingListStart
+\cvHeading
+{Novade Solutions}
+{\href{https://www.novade.net/}{novade.net}}
+{NovadeLite  (\href{https://lite.novade.net}{lite.novade.net}) is a smart field management system for the building and construction
+  industry. Keeping track of construction projects, assets, various kinds of forms, tasks, and managing people are some
+  of the key features in this project.}
+\small \textbf{Tools and technologies}: {\footnotesize Flutter, Dart, Typescript, PostgreSQL, SQLite, GraphQL, NodeJS, NestJS, REST, Socket.io, TypeORM, Jest, Bitrise, Firebase, Sentry, Amplitude, Stripe, Git, Bash}
+
+\cvItemListStart
+\item Work as a full-stack developer (Frontend: Flutter, Backend: NodeJS, NestJS, GraphQL, REST, TypeORM, PostgreSQL).
+\item Executed a comprehensive restructuring of the project's mono-repo architecture using Melos, resulting in a 50\% reduction in build, 10x reduction in code generation, and improved scalability.
+\item Achieved a 40\% reduction in loading time by optimizing front-end development processes using Dart and Flutter.
+\item Integrated payment and subscription features, resulting in a 50\% increase in revenue within six months.
+\item Implemented a company wide Quality Assurance (QA) process and Continuous Integration (CI) framework, leading to a 50\% decrease in bug reports and 30\% faster deployment cycles.
+\item Established standardized protocols for code quality and consistency, resulting in a 40\% decrease in code review time and increase in developer productivity.
+\item Overhauled the GraphQL API and PostgreSQL database, enhancing safety, relevance, and performance, resulting in a 15\% decrease of the project code size.
+\item Code reviews and consultation on possible issues and edge cases reducing 10\% of possible regression issues.
+\item Breaking down the user stories and estimations achieving near 100\% project goals on time.
+
+\cvItemListEnd
+
+
+
+\cvHeadingListEnd
+
 \section{\textbf{Education}}
 \cvHeadingListStart
 \cvHeading
@@ -175,7 +202,7 @@ dynamic environment.
   microcomputer, connected to cameras positioned on high spots with a view on the
   forest. Our detectors communicate fire alerts to a database that is connected to
   a supervision platform for the fire department.} \\
-\small \textbf{Tools and technology}: {\footnotesize TypeScript, ReactJS, Jest}
+\small \textbf{Tools and technologies}: {\footnotesize TypeScript, ReactJS, Jest}
 \cvItemListStart
 \item Contributed to developing a front-end \textit{"crowdsourcer"} app for wildfire image uploads.
 \item Implemented front-end tests using JEST for enhanced reliability.
@@ -242,42 +269,4 @@ dynamic environment.
 \cvHeadingListEnd
 \vspace{-5.5mm}
 
-
-
-
-%-----------Positions of Responsibility-----------------
-\section{\textbf{Positions of Responsibility}}
-\vspace{-0.4mm}
-\cvHeadingListStart
-\resumePOR{On Desk Registrations Volunteer } % Position
-{Aarhant Cyber Week Event - RCOEM, Nagpur} %Club,Event
-{Oct - Dec 2022} %Tenure Period \\
-\cvItemListStart
-\item {Helped to attract close to 300 attendees to the event.}
-\item {Collected over Rs. 20,000 in entry fees for different activities.}
-\cvItemListEnd
-
-\cvHeadingListEnd
-\vspace{-5mm}
-
-
-
-
-% %-----------Achievements-----------------
-% \section{\textbf{Achievements}}
-% \vspace{-0.4mm}
-% \cvHeadingListStart
-% \resumePOR{Achievement } % Award
-%     {description} % Event
-%     {Event dates} %Event Year
-
-% \resumePOR{Achievement } % Award
-%     {description} % Event
-%     {Event dates} %Event Year
-% \cvHeadingListEnd
-% \vspace{-5mm}
-
-
-
-%-------------------------------------------
 \end{document}
