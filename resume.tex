@@ -22,17 +22,9 @@
 \usepackage[sfdefault]{roboto}
 \usepackage{xparse}
 
-\setlength{\multicolsep}{0pt} 
-\pagestyle{fancy}
-\fancyhf{} % clear all header and footer fields
-\fancyfoot{}
 \renewcommand{\headrulewidth}{0pt}
 \renewcommand{\footrulewidth}{0pt}
 \geometry{left=1.4cm, top=0.8cm, right=1.2cm, bottom=1cm}
-% Adjust margins
-%\addtolength{\oddsidemargin}{-0.5in}
-%\addtolength{\evensidemargin}{-0.5in}
-%\addtolength{\textwidth}{1in}
 \usepackage[most]{tcolorbox}
 \tcbset{
 	frame code={}
@@ -49,15 +41,12 @@
 	arc=0pt,outer arc=0pt,
 }
 
-\urlstyle{same}
-
 \raggedright
 \setlength{\tabcolsep}{0in}
 
-% Sections formatting
-\titleformat{\section}{
-  \vspace{-4pt}\scshape\raggedright\large
-}{}{0em}{}[\color{black}\titlerule \vspace{-7pt}]
+\usepackage{titlesec} % Used to customize the \section command
+\titleformat{\section}{\Large\scshape\raggedright}{}{0em}{}[\titlerule] % Text formatting of sections.
+\titlespacing{\section}{0pt}{3pt}{3pt} % Spacing around sections.
 
 
 % Custom commands
@@ -95,14 +84,13 @@
 \begin{document}
 %----------HEADING-----------------
 
-{
-\begin{tabularx}{\linewidth}{L r}                                                                                                 \\  \textbf{\Large \name} & {\raisebox{0.0\height}{\footnotesize \faPhone}\ +65-93356456}                                                  \\
-   & \href{mailto:\email}{\raisebox{0.0\height}{\footnotesize \faEnvelope}\ {\email}}                               \\
-   & \href{https://github.com/ValentinVignal}{\raisebox{0.0\height}{\footnotesize \faGithub}\ {GitHub}}             \\
-   & \href{https://www.linkedin.com/feed/}{\raisebox{0.0\height}{\footnotesize \faLinkedin}\ {LinkedIn}}            \\
-   & \href{https://valentinvignal.github.io/portfolio/}{\raisebox{0.0\height}{\footnotesize \faGlobe}\ {Portfolio}} \\
+\par{\centering{\Huge Valentin \textsc{Vignal}}\bigskip\par}
+
+
+\begin{tabularx}{\textwidth}{X X X}
+  \href{mailto:\email}{\raisebox{0.0\height}{\footnotesize \faEnvelope}\ {\email}}                   & {\raisebox{0.0\height}{\footnotesize \faPhone}\ +65-93356456}                                                  & \href{https://www.linkedin.com/feed/}{\raisebox{0.0\height}{\footnotesize \faLinkedin}\ {LinkedIn}} \\
+  \href{https://github.com/ValentinVignal}{\raisebox{0.0\height}{\footnotesize \faGithub}\ {GitHub}} & \href{https://valentinvignal.github.io/portfolio/}{\raisebox{0.0\height}{\footnotesize \faGlobe}\ {Portfolio}}                                                                                                       \\
 \end{tabularx}
-}
 
 
 \section{\textbf{Personal Statement}}
@@ -115,17 +103,15 @@ dynamic environment.
 
 
 \section{\textbf{Technology Stack}}
-\begin{itemize}[leftmargin=0.05in, label={}]
-  \small{\item{
-        \textbf{Languages}{: Dart, TypeScript, Svelte, JavasScript, Rust, HTML+CSS, Python, Kotlin } \\
-        \textbf{Frontend Frameworks}{: Flutter, ReactJS, Svelte, SvelteKit} \\
-        \textbf{Backend Frameworks}{: NodeJS, Express, NestJS, GraphQL, TypeORM} \\
-        \textbf{Platforms}{: macOS, Linux, Windows} \\
-        \textbf{Databases}{: PostgreSQL, MySQL, SQLite, Firebase} \\
-        \textbf{Testing frameworks}{: Flutter test, Jest, Vitest, Playwright, Cypress} \\
 
-        }}
-\end{itemize}
+\begin{tabular}{l l}
+  Languages:           & Dart, TypeScript, Svelte, JavasScript, Rust, HTML+CSS, Python, Kotlin \\
+  Frontend Frameworks: & Flutter, ReactJS, Svelte, SvelteKit                                   \\
+  Backend Frameworks:  & NodeJS, Express, NestJS, GraphQL, TypeORM                             \\
+  Platforms:           & macOS, Linux, Windows                                                 \\
+  Databases:           & PostgreSQL, MySQL, SQLite, Firebase                                   \\
+  Testing frameworks:  & Flutter test, Jest, Vitest, Playwright, Cypress                       \\
+\end{tabular}
 
 \section{\textbf{Experience}}
 \cvHeadingListStart
