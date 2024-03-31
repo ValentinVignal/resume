@@ -61,19 +61,6 @@
 
 
 % Custom commands
-\newcommand{\resumeItem}[2]{
-  \item{
-    \textbf{#1}{\hspace{0.5mm}#2 \vspace{-0.5mm}}
-  }
-}
-
-\newcommand{\resumePOR}[3]{
-\vspace{0.5mm}\item
-    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
-        \textbf{#1}\hspace{0.3mm}#2 & \textit{\small{#3}} 
-    \end{tabular*}
-    \vspace{-2mm}
-}
 
 \newcommand{\cvHeading}[3]{
 \vspace{0.5mm}\item
@@ -93,21 +80,10 @@
     \vspace{-2.4mm}
 }
 
-\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
-% \renewcommand{\labelitemii}{$\circ$}
-% \renewcommand{\labelitemi}{$\vcenter{\hbox{\tiny$\bullet$}}$}
 \newcommand{\cvHeadingListStart}{\begin{itemize}[leftmargin=*,labelsep=0mm]}
 \newcommand{\cvHeadingListEnd}{\end{itemize}\vspace{2mm}}
 \newcommand{\cvItemListStart}{\begin{justify}\begin{itemize}[leftmargin=1ex, rightmargin=2ex, noitemsep, labelsep=1.2mm, itemsep=0mm]\small}
 \newcommand{\cvItemListEnd}{\end{itemize}\end{justify}\vspace{-2mm}}
-\newcommand{\resumeHeadingSkillEnd}{\end{itemize}\vspace{-2mm}}
-\newcommand{\cvsection}[1]{%
-\vspace{2mm}
-\begin{tcolorbox}
-    \textbf{\large #1}
-\end{tcolorbox}
-    \vspace{-4mm}
-}
 \newcolumntype{L}{>{\raggedright\arraybackslash}X}%
 \newcolumntype{R}{>{\raggedleft\arraybackslash}X}%
 \newcolumntype{C}{>{\centering\arraybackslash}X}%
@@ -156,9 +132,18 @@ dynamic environment.
 \cvHeading
 {Novade Solutions}
 {\href{https://www.novade.net/}{novade.net}}
-{NovadeLite  (\href{https://lite.novade.net}{lite.novade.net}) is a smart field management system for the building and construction
+{NovadeLite (\href{https://lite.novade.net}{lite.novade.net}) is a smart field management system for the building and construction
   industry. Keeping track of construction projects, assets, various kinds of forms, tasks, and managing people are some
   of the key features in this project.}
+
+\begin{tabular}{r|l}
+  Sep 2022 - Present  & Senior Full Stack Developer \\
+                      & Singapore                   \\
+  \\
+  Jun 2019 - Aug 2022 & Software Developer          \\
+                      & Singapore                   \\
+\end{tabular}
+
 \small \textbf{Tools and technologies}: {\footnotesize Flutter, Dart, Typescript, PostgreSQL, SQLite, GraphQL, NodeJS, NestJS, REST, Socket.io, TypeORM, Jest, Bitrise, Firebase, Sentry, Amplitude, Stripe, Git, Bash}
 
 \cvItemListStart
@@ -237,36 +222,4 @@ dynamic environment.
 {A flutter application to organize padel games in Singapore.}
 
 \cvHeadingListEnd
-
-
-%-----------EXPERIENCE-----------------
-\section{\textbf{Experience}}
-\cvHeadingListStart
-\cvHeading
-{AWS Cloud Virtual Internship}{Online}
-{AICTE-Eduskills}{May - July 2023}
-\vspace{-2.0mm}
-\cvItemListStart
-\item {In-depth understanding of AWS cloud computing services, including EC2, S3, RDS, Lambda, IAM, VPC, and more.}
-\item {Proficient in designing, deploying, and managing fault-tolerant, highly available, and scalable AWS solutions.}
-\item {Strong knowledge of architectural best practices, such as AWS Well-Architected Framework, security, performance, and cost optimization.}
-\item {Hands-on experience in cloud infrastructure provisioning, monitoring, and automation using AWS Management Console and AWS CLI.}
-\cvItemListEnd
-
-\vspace{-3.0mm}
-
-\cvHeading
-{Palo Alto Cybersecurity Virtual Internship}{Online}
-{AICTE-Eduskills}{Dec 2022 - Feb 2023}
-\vspace{-2.0mm}
-\cvItemListStart
-\item {Learned the fundamentals of Security Operations Center (SOC).}
-\item {Learned basics of Network \& Cloud Security.}
-\cvItemListEnd
-
-\vspace{-3.0mm}
-
-\cvHeadingListEnd
-\vspace{-5.5mm}
-
 \end{document}
