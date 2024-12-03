@@ -1,0 +1,7 @@
+{
+    "workbench.editorAssociations": {
+        "*.copilotmd": "vscode.markdown.preview.editor",
+        "*.pdf": "latex-workshop-pdf-hook"
+    },
+    "latex-workshop.formatting.latex": "latexindent"
+}
